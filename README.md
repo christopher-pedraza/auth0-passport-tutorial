@@ -1,45 +1,21 @@
-# todos-express-starter
+# Tutorial de Auth0 con Passport
 
-This is a starter kit for building a todo app with sign in functionality using
-[Express](https://expressjs.com/), [Passport](https://www.passportjs.org/) and
-[SQLite](https://www.sqlite.org/).
+## Tutorial
 
-The following is a list of complete, working example apps that have been built
-using this kit as a starting point.
+Basado en el tutorial de Passport: [https://www.passportjs.org/tutorials/auth0/](https://www.passportjs.org/tutorials/auth0/)
 
-* [todos-express-password](https://github.com/passport/todos-express-password)
+## Configuración
 
-  Illustrates how to sign in with a username and password.
+1. Crea un archivo `.env` en la raíz del proyecto:
 
-* [todos-express-password-flash](https://github.com/passport/todos-express-password-flash)
+```
+touch .env
+```
 
-  Illustrates how to sign in with a username and password and use the flash for
-  informative messages.
+2. Agrega las variables de entorno tomadas de la aplicación de Auth0 (la aplicación de tipo _Regular Web Applications_):
 
-* [todos-express-google](https://github.com/passport/todos-express-google)
-
-  Illustrates how to sign in with Google via OpenID Connect.
-
-* [todos-express-google-oauth2](https://github.com/passport/todos-express-google-oauth2)
-
-  Illustrates how to sign in with Google via OAuth 2.0.
-
-* [todos-express-email](https://github.com/passport/todos-express-email)
-
-  Illustrates how to sign in with email via magic link.
-
-* [todos-express-auth0](https://github.com/passport/todos-express-auth0)
-
-  Illustrates how to implement sign in by integrating with Auth0 via OpenID Connect.
-
-* [todos-express-openidconnect](https://github.com/passport/todos-express-openidconnect)
-
-  Illustrates how to implement sign in by integrating with an identity provider (IdP) via OpenID Connect.
-
-## License
-
-[The Unlicense](https://opensource.org/licenses/unlicense)
-
-## Credit
-
-Created by [Jared Hanson](https://www.jaredhanson.me/)
+```
+AUTH0_DOMAIN=__INSERT_DOMAIN_HERE__
+AUTH0_CLIENT_ID=__INSERT_CLIENT_ID_HERE__
+AUTH0_CLIENT_SECRET=__INSERT_CLIENT_SECRET_HERE__
+```
